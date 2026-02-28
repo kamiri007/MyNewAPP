@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MyNewAPP Workspace</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main class="layout">
+      <section class="panel">
+        <h1>Workspace</h1>
+        <form id="create-page-form" class="form">
+          <label>
+            工作空间ID
+            <input id="workspace-id" value="ws-1" required />
+          </label>
+          <label>
+            页面标题
+            <input id="page-title" placeholder="输入页面标题" required />
+          </label>
+          <label>
+            页面内容
+            <textarea id="page-content" rows="3" placeholder="输入页面内容"></textarea>
+          </label>
+          <button type="submit">创建页面</button>
+        </form>
+        <p id="message" aria-live="polite"></p>
+      </section>
+
+      <section class="panel">
+        <div class="row-between">
+          <h2>页面树</h2>
+          <button id="refresh-tree">刷新</button>
+        </div>
+        <ul id="tree" class="tree"></ul>
+      </section>
+    </main>
+    <script type="module" src="/app.js"></script>
+  </body>
+</html>

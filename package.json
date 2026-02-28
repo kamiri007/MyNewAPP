@@ -1,0 +1,10 @@
+{
+  "name": "mynewapp",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test packages/application/tests/*.spec.js packages/application/tests/ui/*.spec.js services/api/tests/*.spec.js",
+    "start:api": "node services/api/src/server.js"
+  }
+}
